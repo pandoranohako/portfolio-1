@@ -2,6 +2,12 @@
 @import url("tsutomu.css");
 @import url("ucchi.css");
 
+
+html {
+  font-size: 62.5%;
+}
+
+
 iframe {
   display: block;
   border: none;

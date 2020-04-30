@@ -1,48 +1,60 @@
 @charset "UTF-8";
 .middle_wrapper .content {
-  width: 70%;
+  width: 73%;
   margin: 0 auto;
 }
 
 .middle_wrapper .content .info__title {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-size: 3rem;
+  margin: 7% 0 2% 0;
 }
 
 .middle_wrapper .content .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .middle_wrapper .content .info__left {
   width: 50%;
-  height: 70vh;
+  height: 60vh;
   border-right: 1px solid  #ddd;
 }
 
 .middle_wrapper .content .info__right {
+  text-align: center;
   width: 50%;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .middle_wrapper .content .info__right__left {
   width: 50%;
-}
-
-.middle_wrapper .content .info__right__left .sub_content {
-  width: 48%;
+  border-right: 1px solid #ddd;
 }
 
 .middle_wrapper .content .info__right__right {
   width: 50%;
+}
+
+.middle_wrapper .content .info__btn {
+  text-align: center;
+  padding-top: 7%;
+}
+
+.middle_wrapper .content .info__btn a {
+  padding: 1.8% 5.6%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 /*# sourceMappingURL=tsutomu.css.map */

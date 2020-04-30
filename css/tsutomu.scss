@@ -1,0 +1,24 @@
+.middle_wrapper {
+
+  .content {
+
+    .info__title {
+      font-size: 5rem;
+    }
+    .info {
+
+      &__left {
+
+      }
+      &__right {
+
+        &__left {
+
+        }
+        &__right {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* モバイル向けレイアウト */
+@media screen and (max-width: 670px) {
+  .middle_wrapper .container {
+    width: 90%;
+  }
+  .middle_wrapper .container .info__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .middle_wrapper .container .info {
+    width: 100%;
+    display: block;
+    margin-bottom: 10%;
+  }
+  .middle_wrapper .container .info__left {
+    width: 100%;
+    border: none;
+  }
+  .middle_wrapper .container .info__left__selectBar {
+    width: 70%;
+    height: 15%;
+  }
+  .middle_wrapper .container .info__left__selectBar__date {
+    line-height: 500%;
+  }
+  .middle_wrapper .container .info__left__content {
+    margin-bottom: 30%;
+  }
+  .middle_wrapper .container .info__left__content__img {
+    width: 100%;
+  }
+  .middle_wrapper .container .info__right {
+    width: 100%;
+  }
+  .middle_wrapper .container .info__right__left {
+    border: none;
+  }
+  .middle_wrapper .container .info__right .sub_content__img {
+    width: 95%;
+  }
+  .middle_wrapper .container .info__right .sub_content p {
+    font-size: 1rem;
+    margin-bottom: 6%;
+  }
+  .middle_wrapper .container .info__right .sub_content h3 {
+    font-size: 1.3rem;
+  }
+  .middle_wrapper .container .info__btn {
+    margin-bottom: 15%;
+  }
+  .middle_wrapper .container .info__btn a {
+    font-size: 1.2rem;
+    padding: 4% 17%;
+  }
+}
+/*# sourceMappingURL=responsive_tsutomu.css.map */

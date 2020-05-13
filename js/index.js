@@ -18,7 +18,6 @@ $(function(){
     $('.info__left__content').removeClass('active');
     $('#3_content').addClass('active');
   });
-
 });
 
 

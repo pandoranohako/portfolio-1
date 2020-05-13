@@ -1,7 +1,7 @@
 @import url("shun.css");
 @import url("tsutomu.css");
 @import url("ucchi.css");
-
+@import url("responsive_tsutomu.css");
 
 html {
   font-size: 62.5%;

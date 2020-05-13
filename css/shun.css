@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.header_bg {
+  font-size: 14px;
+  height: 70px;
+  width: 100%;
+  z-index: 99;
+  background-color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  position: fixed;
+}
+
+.header_bg .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_logo {
+  background-image: url(https://www.yakiniku.jp/sakai/wp-content/uploads/2018/07/300_55_logo.png);
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 70px;
+}
+
+.info {
+  display: flex;
+}
+.info a {
+  color: white;
+  padding: 0 21px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.inner {
+  display: none;
+}
+
+.inner .content {
+  width: 2000px;
+}
+
+.my-parts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.my-parts ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.my-parts ul > li {
+  float: left;
+  position: relative;
+  width: 20%;
+  box-sizing: border-box;
+}
+.my-parts ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: black;
+  text-align: center;
+}
+.my-parts ul li a:hover {
+  background: red;
+  height: 60px;
+}
+.my-parts ul > li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.my-parts ul > li li {
+  float: none;
+  width: 100%;
+}
+.my-parts ul li:hover ul {
+  display: block;
+}
+
+.main_wrapper {
+  width: 100%;
+}
+.main_img {
+  background-image: url(https://www.yakiniku.jp/sakai/wp-content/uploads/2018/07/1450_1200_topimage_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 980px;
+}
+.main_img-content {
+}
+.main_message {
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  color: white;
+  font-size: 5rem;
+  margin: auto;
+  padding-top: 400px;
+  line-height: 100px;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*表示領域が0～480pxに適用*/
+  nav {
+    display: none;
+  }
+  .header_logo {
+    padding-right: 40rem;
+    margin-top: 10px;
+  }
+  /* .header_bg {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+  } */
+}

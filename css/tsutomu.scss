@@ -1,34 +1,136 @@
 .middle_wrapper {
-
-  .content {
-    width: 70%;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  .container {
+    width: 73%;
     margin: 0 auto;
     .info__title {
-      font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
       font-size: 3rem;
+      margin: 7% 0 2% 0;
     }
     .info {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       &__left {
         width: 50%;
-        height: 70vh;
+        height: 100%;
         border-right: 1px solid  #ddd;
+        position: relative;
+        &__selectBar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          height: 10%;
+          width: 35%;
+          background-color: black;
+          display: flex;
+          &__date {
+            width: 50%;
+            text-align: center;
+            line-height: 500%;
+            p {
+              font-size: 1.2rem;
+              color: white;
+            }
+          }
+          &__btns {
+            width: 50%;
+            margin: auto auto;
+            padding-right: 3%;
+            display: flex;
+            justify-content: space-around;
+            a {
+              display: block;
+              padding: 7% 10%;
+              color: white;
+              text-decoration: none;
+              background-color: #333;
+            }
+          }
+        }
+
+        &__content {
+          display: none;
+          // はみ出る部分を隠す。imgと同じサイズにする必要あり。
+          &__img {
+            width: 95%;
+            overflow: hidden;
+            img {
+              // hover解除時の処理、速さ
+              display: block;
+              transition-duration: 0.5s;
+            }
+            img:hover {
+              transform: scale(1.3);
+              transition-duration: 0.5s;
+            }
+          }
+          h3 {
+            font-size: 1.8rem;
+            margin: 3% 0;
+            font-weight: bold;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .active {
+          display: block;
+        }
+        
       }
       &__right {
+        text-align: center;
         width: 50%;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        .sub_content {
+          height: 53%;
+          p {
+            font-size: 1.2rem;
+            color: #999;
+            margin: 3% 0 0.7%;
+          }
+          h3 {
+            font-size: 1.7rem;
+            line-height: 1.6;
+          }
+        }
+        .sub_content__img {
+          width: 82%;
+          overflow: hidden;
+          // imgがdisplay:block; となるので、中央揃えするならmarginを使わなければならない。
+          margin: 0 auto;
+          img {
+            display: block;
+            transition-duration: 0.5s;
+          }
+          img:hover {
+            transform: scale(1.3);
+            transition-duration: 0.5s;
+          }
+        }
         &__left {
           width: 50%;
-
-          .sub_content {
-            width: 48%;
-          }
+          border-right: 1px solid #ddd;
         }
         &__right {
           width: 50%;
         }
+      }
+    }
+    .info__btn {
+      text-align: center;
+      padding-top: 7%;
+      
+      a {
+      padding: 1.8% 5.6%;
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
       }
     }
   }

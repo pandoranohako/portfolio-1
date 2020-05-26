@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+  box-sizing: border-box;
+}
+
+
 .header_bg {
   font-size: 14px;
   height: 70px;
@@ -12,72 +17,78 @@
 }
 
 .header_bg .container {
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .header_logo {
   background-image: url(https://www.yakiniku.jp/sakai/wp-content/uploads/2018/07/300_55_logo.png);
   background-repeat: no-repeat;
   width: 20%;
-  height: 70px;
+  height: 100%;
+  margin-top: 10px;
 }
 
 .info {
-  display: flex;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100%;
 }
 .info a {
   color: white;
   padding: 0 21px;
   font-size: 14px;
   text-decoration: none;
-}
-.inner {
-  display: none;
-}
-
-.inner .content {
-  width: 2000px;
+  height: 100%;
+  display: block;
 }
 
-.my-parts ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#my-parts{
+  height: 100%;
 }
-.my-parts ul::after {
+#my-parts ul {
+  text-align: center;
+  margin: auto;
+  display: flex;
+
+}
+
+#my-parts ul::after {
   content: "";
   display: block;
-  clear: both;
 }
-.my-parts ul > li {
-  float: left;
+#my-parts ul > li {
   position: relative;
-  width: 20%;
-  box-sizing: border-box;
 }
-.my-parts ul li a {
-  display: block;
+#my-parts ul li  {
   text-decoration: none;
   background-color: black;
-  text-align: center;
+  height: 100%;
+  line-height: 70px;
 }
-.my-parts ul li a:hover {
+#my-parts ul li a:hover {
   background: red;
-  height: 60px;
 }
-.my-parts ul > li ul {
+
+
+#my-parts ul > li ul {
   display: none;
   position: absolute;
   top: 100%;
   width: 100%;
 }
-.my-parts ul > li li {
-  float: none;
-  width: 100%;
+
+#my-parts ul > li li {
+  text-align: center;
 }
-.my-parts ul li:hover ul {
+
+#my-parts ul > li li a{
+  font-size: 1.2rem;
+}
+#my-parts ul li:hover ul {
   display: block;
 }
 
@@ -117,19 +128,46 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+a {
+  text-decoration: none;
+}
+.c-menu-btn{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+}
+.p-menu-btn {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.c-menu-btn::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 900;
+  content: "\f039";
+}
+
+@media screen and (max-width: 680px) {
   /*表示領域が0～480pxに適用*/
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .c-menu-btn{
+    display: block;
+  }
   nav {
     display: none;
   }
   .header_logo {
-    padding-right: 40rem;
-    margin-top: 10px;
+    padding-right: 50rem;
   }
-  /* .header_bg {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: black;
-  } */
-}
+  .main_img {
+    width: 520px;
+  }

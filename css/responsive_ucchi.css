@@ -1,0 +1,121 @@
+/* モバイル向けレイアウト */
+@media screen and (max-width: 670px) {
+
+  .bottom-header {
+    width: 100%;
+  }
+
+  .bottom-header__title {
+    top: 0%;
+  }
+
+  .bottom-header__title__right {
+    font-size: 1.8rem;
+    padding: 5% 0;
+  }
+
+  .bottom-header__title__left {
+    font-size: 1.8rem;
+  }
+
+  .bottom-header__history {
+    margin-top: 7%;
+  }
+
+  .bottom-header__history__head {
+    width: 500%;
+    height: 236%;
+    top: 15%;
+    left: 375%;
+  }
+
+  .bottom-header__headline {
+    padding: 30% 20%;
+    font-size: 2.4rem;
+  }
+
+  .bottom-content {
+    display: block;
+  }
+
+  .bottom-content__history {
+    padding-top: 30%;
+  }
+
+  .bottom-content__history__desc {
+    writing-mode: horizontal-tb;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .bottom-photo__above {
+    display: block;
+  }
+
+  .bottom-photo__above__left {
+    display: block;
+    width: 100%;
+    padding: 0 6%;
+  }
+
+  .bottom-photo__above__right {
+    display: block;
+    width: 100%;
+    padding: 1% 0%;
+    margin: -12% 6%;
+  }
+
+  .bottom-photo__above__right__title {
+    margin-top: 20%;
+    margin-bottom: 3%;
+    padding-right: 19%;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .bottom-photo__above__right__desc {
+    padding: 5% 16%;
+  }
+
+  .bottom-photo__below {
+    margin: 12% 6%;
+  }
+
+  /* ---------------
+          footer
+  ---------------------*/
+
+  .bottom-footer {
+    width: 100%;
+  }
+
+  .bottom-footer__info {
+    width: 102%;
+  }
+
+  .bottom-footer__contents {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 117%;
+    margin-left: 0;
+  }
+
+  .bottom-footer__photo {
+    width: 45%;
+  }
+
+  .footer-menu__nav {
+    padding: 2% 5%;
+  }
+
+  .footer-menu__item {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+}

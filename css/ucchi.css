@@ -1,12 +1,15 @@
+.bottom-header {
+  width: 100%;
+}
+
 .bottom-header__upper {
   position: relative;
-  height: 100vh;
   background-color: #f6f6f6;
 }
 
 .bottom-header__title {
   position: absolute;
-  top: 30%;
+  top: 20%;
   width: 100%;
   margin-bottom: 0;
   line-height: 1.4;
@@ -15,120 +18,214 @@
 }
 
 .bottom-header__title__right {
+  padding: 3% 0;
   writing-mode: vertical-rl;
   text-align: center;
   white-space: nowrap;
   color: white;
-  font-size: 40px;
+  font-size: 3.4rem;
 }
 
 .bottom-header__title__left {
-  margin-top: 60px;
   writing-mode: vertical-rl;
   text-align: center;
   white-space: nowrap;
   color: white;
-  font-size: 40px;
+  font-size: 3.4rem;
 }
 
 .bottom-header__history {
-  box-sizing: border-box;
   position: relative;
-  max-width: 80px;
-  margin-left: 200px;
-  padding: 100px  0;
+  max-width: 6%;
+  margin-left: 10%;
+  padding: 7%  0;
 }
 
 .bottom-header__history__head {
   background: #660000;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 3.6rem;
   position: absolute;
-  top: -80px;
+  top: -50%;
   left: 0;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 165px;
   text-align: center 
 }
 
 .bottom-header__headline {
-  padding: 20px 40px;
+  padding: 25% 20%;
   writing-mode: vertical-rl;
+
 }
 
-.bottom-header__content {
-  box-sizing: border-box;
-  position: relative;
-  max-width: 80px;
-  margin-left: 200px;
-  padding: 20px  0;
+.bottom-content {
+  display: flex;
 }
 
-.bottom-header__content__history {
-  position: relative;
-  width: 180px;
-  margin-right: 60px;
-  font-size: 16px;
+.bottom-content__history {
+  width: 100%;
+  font-size: 1.6rem;
   line-height: 2.6;
+}
+
+.bottom-content__history__desc {
+  writing-mode: vertical-rl;
+  margin-left: 30%;
+}
+
+.bottom-photo {
+  margin-right: 10%;
+}
+
+.bottom-photo__above {
+  height: 59%;
+  display: flex;
+}
+
+.bottom-photo__above__left {
+  width: 50%;
+}
+
+.bottom-photo__above__right {
+  color: white;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+.bottom-photo__above__right__title {
+  margin: 10% 0;
+  padding-right: 28%;
+  font-size: 1.8rem;
+  line-height: 1.6;
   text-align: center;
 }
 
-.bottom-header__content__history__desc {
-  writing-mode: vertical-rl;
+.bottom-photo__above__right__desc {
+  font-size: 1.2rem;
+  line-height: 2.6;
+  padding: 0 15%;
+  text-align: center;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.bottom-header__content__block {
-
-  flex: 1;
-  width: 150%;
-  margin-left: 200px;
-}
-
-.bottom-header__content__upper {
+.bottom-photo__below {
+  width: 100%;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
+}
+
+.bottom-photo__below__left {
+  width: 33.3%;
+  height: 100%;
+}
+
+.bottom-photo__below__center {
+  width: 33.3%;
+  height: 100%;
+}
+
+.bottom-photo__below__right {
+  width: 33.3%;
+  height: 100%;
+}
+
+.bottom-btn {
+  margin: 5%;
+  text-align: center;
+}
+
+.p-btn {
+  background: #000000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 20%;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 360%;
+  text-align: center;
+  padding: 2% 7%;
+}
+
+
+/* -------------------
+footer
+----------------------*/
+
+.bottom-footer {
+  display: block;
+}
+
+.bottom-footer__info {
+  background: #660000;
+}
+
+.bottom-footer__contents {
+  display: flex;
+  padding: 3% 0;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.bottom-footer__photo {
+  border-right: 1px solid #ddd;
   overflow: hidden;
 }
 
-.bottom-header__img {
+.bottom-footer__photo img  {
   display: block;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  width: 100%;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.bottom-footer__photo img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-.bottom-header__top {
-  position: relative;
-  width: 50%;
-  height: 50%;
-  top: -654px;
+.bottom-footer__title {
+  padding: 5%;
+  background-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-top: -2%;
 }
 
-.bottom-header__top__content {
-  background: #000000;
-  color: #ffffff;
+.footer-menu {
+  background-color: #660000;
 }
 
-.bottom-header__top__content-title {
-  margin-bottom: 46px;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.bottom-header__top__content-desc {
-  font-size: 14px;
-  line-height: 2.2;
-}
-
-/* .bottom__item-btn {
-  margin: 60px auto 0;
+.footer-menu__nav {
   text-align: center;
-} */
+  font-size: 1.4rem;
+  padding: 2%;
+}
+
+.footer-menu__item {
+  display: inline;
+  text-align: center;
+  /* border-right: 1px solid #ddd; */
+}
+
+.footer-menu__item>a{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bottom-copyright {
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.btn-pagetop {
+  display: block;
+}
+

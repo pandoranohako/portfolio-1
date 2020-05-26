@@ -14,133 +14,134 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
-  <body>
-    <!-- 駿 -->
-    <header class="header_bg">
-      <div class="container">
-        <div class="header_logo"><a href="#"></a></div>
-        <nav class="my-parts">
-          <ul class="info">
-            <li class="first"><a href="#">お知らせ</a></li>
-            <li id="second">
-              <a href="#">さかいについて</a>
-              <ul class="inner">
-                <li class="content1-1"><a href="#">お肉のうんちく</a></li>
-                <li class="content1-2"><a href="#">焼肉に指南</a></li>
-              </ul>
-            </li>
-            <li id="third">
-              <a href="#">さかいのこだわり</a>
-              <ul class="inner">
-                <li class="content2-1"><a href="#">お肉は店内加工</a></li>
-                <li class="content2-2"><a href="#">食の安全性について</a></li>
-                <li class="content2-3"><a href="#">居心地の良い空間</a></li>
-              </ul>
-            </li>
-            <li class="fourth"><a href="#">メニュー</a></li>
-            <li class="fifth"><a href="">宴会コース</a></li>
-            <li class="sixth"><a href="#">店舗一覧</a></li>
-            <li class="seventh"><a href="#">求人募集はこちら</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main_wrapper">
-      <div class="main_img">
-        <div class="main_img-content">
-          <h1 class="main_message">うまい、<br />やすい、<br />楽しい。</h1>
-        </div>
-        <div class="main_icon"></div>
-      </div>
-    </main>
 
-    <!-- 努 -->
-    <div class="middle_wrapper">
-      <div class="container">
-        <h2 class="info__title">新着情報</h2>
-        <div class="info">
-          <div class="info__left">
-            <div class="info__left__selectBar">
-              <div class="info__left__selectBar__date">
-                <p>2020.05.11</p>
-              </div>
-              <div class="info__left__selectBar__btns">
-                <a href="#" id="1">1</a>
-                <a href="#" id="2">2</a>
-                <a href="#" id="3">3</a>
-              </div>
+<body>
+  <!-- 駿 -->
+  <header class="header_bg">
+    <div class="container">
+      <div class="header_logo"><a href="#"></a></div>
+      <a href="#" id="js-menu-btn" class="p-menu-btn c-menu-btn is-active"></a>
+      <nav class="my-parts" id="my-parts">
+        <ul class="info">
+          <li id="first"><a href="#">お知らせ</a></li>
+          <li id="second">
+            <a href="#">さかいについて</a>
+            <ul class="inner">
+              <li id="content1-1"><a href="#">お肉のうんちく</a></li>
+              <li id="content1-2"><a href="#">焼肉に指南</a></li>
+            </ul>
+          </li>
+          <li id="third">
+            <a href="#">さかいのこだわり</a>
+            <ul class="inner">
+              <li id="content2-1"><a href="#">お肉は店内加工</a></li>
+              <li id="content2-2"><a href="#">食の安全性について</a></li>
+              <li id="content2-3"><a href="#">居心地の良い空間</a></li>
+            </ul>
+          </li>
+          <li id="fourth"><a href="#">メニュー</a></li>
+          <li id="fifth"><a href="">宴会コース</a></li>
+          <li id="sixth"><a href="#">店舗一覧</a></li>
+          <li id="seventh"><a href="#">求人募集はこちら</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main_wrapper">
+    <div class="main_img">
+      <div class="main_img-content">
+        <h1 class="main_message">うまい、<br />やすい、<br />楽しい。</h1>
+      </div>
+      <div class="main_icon"></div>
+    </div>
+  </main>
+
+  <!-- 努 -->
+  <div class="middle_wrapper">
+    <div class="container">
+      <h2 class="info__title">新着情報</h2>
+      <div class="info">
+        <div class="info__left">
+          <div class="info__left__selectBar">
+            <div class="info__left__selectBar__date">
+              <p>2020.05.11</p>
             </div>
-            <div class="info__left__content active" id="1_content">
-              <div class="info__left__content__img">
-                <img src="img/banquet.png" width="100%">
-              </div>
-              <h3>〜忘年会・新年会〜</h3>
-              <p>忘年会や新年会は当店にお任せ！<br>
+            <div class="info__left__selectBar__btns">
+              <a href="#" id="1">1</a>
+              <a href="#" id="2">2</a>
+              <a href="#" id="3">3</a>
+            </div>
+          </div>
+          <div class="info__left__content active" id="1_content">
+            <div class="info__left__content__img">
+              <img src="img/banquet.png" width="100%">
+            </div>
+            <h3>〜忘年会・新年会〜</h3>
+            <p>忘年会や新年会は当店にお任せ！<br>
               様々なコースメニューをご用意しております。
-              </p>
+            </p>
+          </div>
+          <div class="info__left__content" id="2_content">
+            <div class="info__left__content__img">
+              <img src="img/calvi.jpg" width="100%">
             </div>
-            <div class="info__left__content" id="2_content">
-              <div class="info__left__content__img">
-                <img src="img/calvi.jpg" width="100%">
-              </div>
-              <h3>絶品カルビ登場！</h3>
-              <p>北海道産の絶品カルビを入荷しました。<br>
+            <h3>絶品カルビ登場！</h3>
+            <p>北海道産の絶品カルビを入荷しました。<br>
               濃厚な風味をぜひご堪能ください！
-              </p>
+            </p>
+          </div>
+          <div class="info__left__content" id="3_content">
+            <div class="info__left__content__img">
+              <img src="img/time.png" width="100%">
             </div>
-            <div class="info__left__content" id="3_content">
-              <div class="info__left__content__img">
+            <h3>営業時間変更のお知らせ</h3>
+            <p>ただいま、当店では営業時間の短縮を行っております。</p>
+          </div>
+        </div>
+        <div class="info__right">
+          <div class="info__right__left">
+            <div class="sub_content">
+              <div class="sub_content__img">
                 <img src="img/time.png" width="100%">
               </div>
+              <p>2020.4.30</p>
               <h3>営業時間変更のお知らせ</h3>
-              <p>ただいま、当店では営業時間の短縮を行っております。</p>
+            </div>
+            <div class="sub_content">
+              <div class="sub_content__img">
+                <img src="img/calvi.jpg" width="100%">
+              </div>
+              <p>2020.4.30</p>
+              <h3>絶品カルビ、登場</h3>
             </div>
           </div>
-          <div class="info__right">
-            <div class="info__right__left">
-              <div class="sub_content">
-                <div class="sub_content__img">
-                  <img src="img/time.png" width="100%">
-                </div>
-                <p>2020.4.30</p>
-                <h3>営業時間変更のお知らせ</h3>
+          <div class="info__right__right">
+            <div class="sub_content">
+              <div class="sub_content__img">
+                <img src="img/banquet.png" width="100%">
               </div>
-              <div class="sub_content">
-                <div class="sub_content__img">
-                  <img src="img/calvi.jpg" width="100%">
-                </div>
-                <p>2020.4.30</p>
-                <h3>絶品カルビ、登場</h3>
-              </div>
+              <p>2020.4.30</p>
+              <h3>〜忘年会・新年会〜<br>
+                お任せください
+              </h3>
             </div>
-            <div class="info__right__right">
-              <div class="sub_content">
-                <div class="sub_content__img">
-                  <img src="img/banquet.png" width="100%">
-                </div>
-                <p>2020.4.30</p>
-                <h3>〜忘年会・新年会〜<br>
-                  お任せください
-                </h3>
+            <div class="sub_content">
+              <div class="sub_content__img">
+                <img src="img/freebie.jpg" width="100%">
               </div>
-              <div class="sub_content">
-                <div class="sub_content__img">
-                  <img src="img/freebie.jpg" width="100%">
-                </div>
-                <p>2020.4.30</p>
-                <h3>景品獲得キャンペーン<br>
-                  実施中!!
-                </h3>
-              </div>
+              <p>2020.4.30</p>
+              <h3>景品獲得キャンペーン<br>
+                実施中!!
+              </h3>
             </div>
           </div>
-        </div>
-        <div class="info__btn">
-          <a href="#">お知らせ一覧</a>
         </div>
       </div>
+      <div class="info__btn">
+        <a href="#">お知らせ一覧</a>
+      </div>
     </div>
-
+  </div>
 
 <!-- 参考サイト -->
 <!-- 画像拡大：https://kuzlog.com/2017/02/25/1168/ -->
@@ -194,6 +195,7 @@
             </div>
           </div>
         </div>
+
       </div>
         <p class="bottom-btn">
           <a href="#" class="p-btn">店舗へのお問い合わせ</a>
@@ -238,6 +240,7 @@
     </footer>
 
 
-    <script src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
+
 </html>

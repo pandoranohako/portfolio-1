@@ -18,7 +18,7 @@
 }
 
 .bottom-header__title__right {
-  padding: 3% 0;
+  padding: 5% 0;
   writing-mode: vertical-rl;
   text-align: center;
   white-space: nowrap;
@@ -27,6 +27,7 @@
 }
 
 .bottom-header__title__left {
+  padding: 6% 0;
   writing-mode: vertical-rl;
   text-align: center;
   white-space: nowrap;

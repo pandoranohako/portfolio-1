@@ -13,7 +13,6 @@
   background-color: #000000;
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
-  position: fixed;
 }
 
 .header_bg .container {
@@ -79,6 +78,7 @@
   position: absolute;
   top: 100%;
   width: 100%;
+  z-index: 99;
 }
 
 #my-parts ul > li li {
@@ -100,9 +100,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 980px;
+  position: relative;
 }
 .main_img-content {
+
 }
+
+
 .main_message {
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
@@ -154,11 +158,6 @@ a {
 
 @media screen and (max-width: 680px) {
   /*表示領域が0～480pxに適用*/
-
-  *{
-    box-sizing: border-box;
-  }
-
   .c-menu-btn{
     display: block;
   }
@@ -166,8 +165,30 @@ a {
     display: none;
   }
   .header_logo {
-    padding-right: 50rem;
+    /* padding-right: 50rem; */
+    width: 100%;
   }
+
+  .main_message {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
   .main_img {
-    width: 520px;
+    height: 845px;
+    /* margin: 0 auto; */
   }
+
+
+  .main_img-content {
+    /* margin: 0 auto; */
+  }
+
+  .main_img-content {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+  }
+  
+}
